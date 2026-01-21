@@ -9,7 +9,7 @@ const Footer = () => {
       url: 'https://open.kakao.com/o/sgQfJTkh',
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 3C6.5 3 2 6.58 2 11c0 2.84 1.87 5.33 4.67 6.77l-.74 2.77c-.07.26.23.48.47.34l3.3-2.15c.68.09 1.38.14 2.1.14 5.5 0 10-3.58 10-8s-4.5-8-10-8zm-3.5 9.5c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1s1 .45 1 1v3c0 .55-.45 1-1 1zm3.5-1c0 .55-.45 1-1 1s-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1v2zm3.5 1c-.39 0-.72-.23-.88-.57l-1.25-2.5c-.24-.48-.05-1.06.43-1.3.48-.24 1.06-.05 1.3.43l.4.8.4-.8c.24-.48.82-.67 1.3-.43.48.24.67.82.43 1.3l-1.25 2.5c-.16.34-.49.57-.88.57z"/>
+          <path d="M12 3C6.5 3 2 6.58 2 11c0 2.84 1.87 5.33 4.67 6.77l-.74 2.77c-.07.26.23.48.47.34l3.3-2.15c.68.09 1.38.14 2.1.14 5.5 0 10-3.58 10-8s-4.5-8-10-8z"/>
         </svg>
       ),
     },
@@ -146,7 +146,7 @@ const Footer = () => {
 
               {/* Application Button */}
               <motion.a
-                href="https://forms.gle/careerbloom"
+                href="https://forms.gle/rnMFeZuoejL2VxRf8"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}

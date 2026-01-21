@@ -1,0 +1,12 @@
+# Copy this file to terraform.tfvars and fill in your values
+
+aws_region     = "ap-northeast-2"
+environment    = "production"
+domain_name    = "careerbloom.kr"
+s3_bucket_name = "career-bloom-kr-frontend"
+
+# Required: Enter your ACM certificate ARN (must be in us-east-1)
+acm_certificate_arn = "arn:aws:acm:us-east-1:ACCOUNT_ID:certificate/CERTIFICATE_ID"
+
+# Required: Enter your Route53 hosted zone ID
+route53_zone_id = "Z1234567890ABC"

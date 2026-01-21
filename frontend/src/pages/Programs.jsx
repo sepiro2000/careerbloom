@@ -96,7 +96,7 @@ const Programs = () => {
                   </p>
                   <div className="space-y-2 text-sm">
                     <p><span className="text-sage-dark font-medium">추천 대상:</span> <span className="text-warm-gray">내가 무엇을 좋아하는지 모르는 분, 객관적인 자기 이해가 필요한 분</span></p>
-                    <p><span className="text-sage-dark font-medium">사용 도구:</span> <span className="text-warm-gray">Holland 적성탐색검사 또는 VIA 강점 검사 (택 1)</span></p>
+                    <p><span className="text-sage-dark font-medium">사용 도구:</span> <span className="text-warm-gray">Holland 적성탐색검사 또는 VIA 강점 검사</span></p>
                     <p><span className="text-sage-dark font-medium">진행 흐름:</span> <span className="text-warm-gray">사전 진단 → 프로파일 심층 해석 → 경험 연결 → 진로 방향성 도출</span></p>
                   </div>
                 </div>
@@ -187,20 +187,31 @@ const Programs = () => {
               </div>
 
               {/* Image - Right */}
-              <div className="relative lg:order-2">
-                <div className="absolute -inset-4 bg-gradient-to-br from-coral-light/20 to-coral/10 rounded-3xl transform -rotate-2" />
-                <a
-                  href="https://blog.naver.com/careerbloom/224149348137"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block relative rounded-2xl overflow-hidden shadow-xl shadow-coral/10 transition-transform duration-300 hover:scale-[1.02]"
-                >
-                  <img
-                    src={program2Image}
-                    alt="진로긍정학 4주 과정"
-                    className="w-full h-full object-cover aspect-[4/3]"
-                  />
-                </a>
+              <div className="lg:order-2">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-br from-coral-light/20 to-coral/10 rounded-3xl transform -rotate-2" />
+                  <div className="block relative rounded-2xl overflow-hidden shadow-xl shadow-coral/10">
+                    <img
+                      src={program2Image}
+                      alt="진로긍정학 4주 과정"
+                      className="w-full h-full object-cover aspect-[4/3]"
+                    />
+                  </div>
+                </div>
+                {/* CTA Button */}
+                <div className="flex justify-center mt-10">
+                  <a
+                    href="https://blog.naver.com/careerbloom/224149348137"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-coral hover:bg-coral-dark text-white font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-coral/30"
+                  >
+                    4주 커리큘럼 자세히 보기
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </motion.article>
@@ -384,7 +395,7 @@ const Programs = () => {
 
             {[
               { step: '01', title: '상담 신청', desc: '신청서 작성 및 일정 조율' },
-              { step: '02', title: '사전 진단', desc: '강점/가치관 검사 진행' },
+              { step: '02', title: '사전 진단', desc: '유형별 맞춤 진단 도구 제공' },
               { step: '03', title: '코칭 진행', desc: '맞춤형 1:1 코칭 세션' },
               { step: '04', title: '성장 확인', desc: '변화 점검 및 피드백' },
             ].map((item, index) => (
@@ -431,7 +442,7 @@ const Programs = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://forms.gle/careerbloom"
+                href="https://forms.gle/rnMFeZuoejL2VxRf8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-sage hover:bg-sage-dark text-cream font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-sage/30"

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import homeMainImage from '../assets/home_main.png';
+import mainTreeImage from '../assets/main_tree.png';
 
 const Home = () => {
   const fadeInUp = {
@@ -102,7 +103,7 @@ const Home = () => {
                 className="heading-sub text-warm-gray text-base md:text-lg max-w-lg mx-auto lg:mx-0 mb-8"
               >
                 꽃이 피어나듯, 당신의 능력과 꿈이 활짝 피어나도록
-                <br className="hidden md:block" />
+                <br className="hidden md:block" />{' '}
                 '커리어블룸'이 함께 합니다.
               </motion.p>
 
@@ -204,110 +205,12 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="relative aspect-[4/5] max-w-sm mx-auto">
-                {/* Abstract tree illustration */}
-                <svg viewBox="0 0 300 380" className="w-full h-full">
-                  {/* Roots */}
-                  <path
-                    d="M150 380 Q140 350 120 340 Q90 330 70 350"
-                    stroke="#C4907A"
-                    strokeWidth="4"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M150 380 Q160 350 180 340 Q210 330 230 350"
-                    stroke="#C4907A"
-                    strokeWidth="4"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M150 380 Q145 340 130 320"
-                    stroke="#C4907A"
-                    strokeWidth="3"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M150 380 Q155 340 170 320"
-                    stroke="#C4907A"
-                    strokeWidth="3"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-
-                  {/* Trunk */}
-                  <path
-                    d="M150 380 Q148 300 150 220"
-                    stroke="#8B7355"
-                    strokeWidth="12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-
-                  {/* Branches */}
-                  <path
-                    d="M150 220 Q120 180 80 160"
-                    stroke="#8B7355"
-                    strokeWidth="6"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M150 220 Q180 180 220 160"
-                    stroke="#8B7355"
-                    strokeWidth="6"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M150 180 Q140 140 120 100"
-                    stroke="#8B7355"
-                    strokeWidth="4"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M150 180 Q160 140 180 100"
-                    stroke="#8B7355"
-                    strokeWidth="4"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-
-                  {/* Foliage - Sage colored circles */}
-                  <circle cx="80" cy="140" r="35" fill="#A8C4A5" opacity="0.8" />
-                  <circle cx="60" cy="100" r="28" fill="#8BA888" opacity="0.7" />
-                  <circle cx="110" cy="90" r="32" fill="#A8C4A5" opacity="0.9" />
-                  <circle cx="150" cy="60" r="38" fill="#8BA888" opacity="0.8" />
-                  <circle cx="190" cy="90" r="32" fill="#A8C4A5" opacity="0.9" />
-                  <circle cx="220" cy="140" r="35" fill="#A8C4A5" opacity="0.8" />
-                  <circle cx="240" cy="100" r="28" fill="#8BA888" opacity="0.7" />
-                  <circle cx="130" cy="130" r="25" fill="#8BA888" opacity="0.6" />
-                  <circle cx="170" cy="130" r="25" fill="#8BA888" opacity="0.6" />
-
-                  {/* Flowers/Fruits - Coral colored */}
-                  <circle cx="70" cy="120" r="8" fill="#E8A598" />
-                  <circle cx="130" cy="70" r="8" fill="#F2C4BA" />
-                  <circle cx="180" cy="55" r="8" fill="#E8A598" />
-                  <circle cx="230" cy="120" r="8" fill="#F2C4BA" />
-                  <circle cx="160" cy="100" r="8" fill="#E8A598" />
-                </svg>
-
-                {/* Labels */}
-                <div className="absolute top-8 left-4 bg-soft-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm">
-                  <p className="text-xs text-sage-dark font-medium">커리어 성취</p>
-                </div>
-                <div className="absolute top-1/3 right-2 bg-soft-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm">
-                  <p className="text-xs text-sage-dark font-medium">라이프</p>
-                </div>
-                <div className="absolute bottom-1/4 left-2 bg-soft-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm">
-                  <p className="text-xs text-sage-dark font-medium">진로</p>
-                </div>
-                <div className="absolute bottom-12 right-8 bg-soft-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm">
-                  <p className="text-xs text-terracotta font-medium">마음의 뿌리</p>
-                </div>
+              <div className="relative max-w-md mx-auto">
+                <img
+                  src={mainTreeImage}
+                  alt="커리어블룸 나무 일러스트"
+                  className="w-full h-auto"
+                />
               </div>
             </motion.div>
 
@@ -483,7 +386,7 @@ const Home = () => {
               </p>
 
               <a
-                href="https://forms.gle/careerbloom"
+                href="https://forms.gle/rnMFeZuoejL2VxRf8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex"

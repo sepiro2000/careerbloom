@@ -70,7 +70,7 @@ frontend/
 - 카카오톡 오픈채팅: https://open.kakao.com/o/sgQfJTkh
 - 네이버 블로그: https://blog.naver.com/careerbloom
 - 인스타그램: https://instagram.com/careerbloom_coach
-- 상담 신청 폼: https://forms.gle/careerbloom
+- 상담 신청 폼: https://forms.gle/rnMFeZuoejL2VxRf8
 - 진로긍정학 블로그 포스트: https://blog.naver.com/careerbloom/224149348137
 
 ## 주요 구현 사항

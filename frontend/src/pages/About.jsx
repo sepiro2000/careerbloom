@@ -302,7 +302,7 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://forms.gle/careerbloom"
+                href="https://forms.gle/rnMFeZuoejL2VxRf8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
