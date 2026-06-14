@@ -71,3 +71,16 @@ aws cloudfront create-invalidation --distribution-id <DISTRIBUTION_ID> --paths "
 ## 상세 정보
 - 프론트엔드: `frontend/CLAUDE.md`
 - 인프라: `terraform/README.md`
+
+## 하네스: 커리어블룸 사이트 운영 (콘텐츠 → QA → 배포)
+
+**목표:** 마케팅 사이트의 콘텐츠 제작·품질 검증·배포를 일관된 파이프라인으로 자동화한다.
+
+**트리거:** 사이트 작업이 2단계 이상(제작+검증, 검증+배포 등) 협업을 요구하면 `cb-orchestrate` 스킬을 사용하라. 단일 작업은 전용 스킬을 직접 사용한다 — 콘텐츠만 `cb-content`, 품질검증만 `cb-qa`, 빌드·배포·인프라만 `cb-deploy`. 단순 질문은 직접 응답 가능.
+
+**에이전트:** content-builder(제작) · brand-qa(검증) · deploy-operator(배포). 실행 모드는 하이브리드(Phase A 팀 + Phase B 서브). 상세는 `.claude/agents/`, `.claude/skills/`에서 관리.
+
+**변경 이력:**
+| 날짜 | 변경 내용 | 대상 | 사유 |
+|------|----------|------|------|
+| 2026-06-14 | 초기 구성 | 전체 | 콘텐츠→QA→배포 통합 파이프라인 하네스 신규 구축 |

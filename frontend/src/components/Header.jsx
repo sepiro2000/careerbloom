@@ -24,6 +24,7 @@ const Header = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/programs', label: 'Programs' },
+    { path: '/review', label: 'Review' },
   ];
 
   return (
@@ -77,8 +78,8 @@ const Header = () => {
             ))}
           </ul>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
             <a
               href="https://forms.gle/rnMFeZuoejL2VxRf8"
               target="_blank"
@@ -86,6 +87,18 @@ const Header = () => {
               className="btn-primary text-sm py-3 px-6"
             >
               상담 신청하기
+            </a>
+            <a
+              href="https://open.kakao.com/o/sgQfJTkh"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="카카오톡 오픈채팅으로 문의하기"
+              title="카카오톡 오픈채팅으로 문의하기"
+              className="flex items-center justify-center w-11 h-11 rounded-full bg-[#FEE500] hover:brightness-95 transition-all duration-300 hover:shadow-lg hover:shadow-[#FEE500]/40"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#3C1E1E">
+                <path d="M12 3C6.5 3 2 6.58 2 11c0 2.84 1.87 5.33 4.67 6.77l-.74 2.77c-.07.26.23.48.47.34l3.3-2.15c.68.09 1.38.14 2.1.14 5.5 0 10-3.58 10-8s-4.5-8-10-8z"/>
+              </svg>
             </a>
           </div>
 

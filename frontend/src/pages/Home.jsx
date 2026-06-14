@@ -284,7 +284,7 @@ const Home = () => {
               Our Programs
             </span>
             <h2 className="heading-display text-3xl md:text-4xl text-charcoal mb-4">
-              맞춤형 코칭 프로그램
+              맞춤형 성장 프로그램
             </h2>
             <p className="text-warm-gray max-w-xl mx-auto">
               당신의 상황과 목표에 맞는 프로그램을 선택하세요
@@ -309,8 +309,8 @@ const Home = () => {
               },
               {
                 num: '03',
-                title: '라이프 디자인',
-                subtitle: 'Life Design',
+                title: '라이프 긍정학',
+                subtitle: 'Life Positive Psychology',
                 desc: '일과 삶, 관계 속에서 잃어버린 \'나다움\'을 회복합니다',
                 color: 'sage',
               },
@@ -380,10 +380,17 @@ const Home = () => {
                 <br />
                 들려주세요
               </h2>
-              <p className="text-warm-gray leading-relaxed mb-8">
-                커리어블룸과 함께 가장 '나다운' 길을 찾아가는 여정을 시작하세요.
-                첫 상담을 통해 현재 고민과 목표를 나누고, 맞춤형 코칭 방향을 안내해 드립니다.
-              </p>
+              <div className="text-warm-gray leading-relaxed mb-8 space-y-4">
+                <p>
+                  커리어블룸과 함께 가장 '나다운 길'을 찾아가는 여정을 시작하세요.
+                </p>
+                <p>
+                  <span className="text-sage-dark font-medium">1:1 개인 코칭 신청</span> → 하단의 '상담 신청서 작성하기' 버튼을 클릭해 주세요.
+                </p>
+                <p>
+                  <span className="text-sage-dark font-medium">대학 및 기관 출강 문의</span> → 우측의 [Kakao Talk 오픈채팅] 또는 하단 이메일(kar4823@nate.com)로 연락 주시면 신속하게 맞춤형 제안서를 보내드립니다.
+                </p>
+              </div>
 
               <a
                 href="https://forms.gle/rnMFeZuoejL2VxRf8"

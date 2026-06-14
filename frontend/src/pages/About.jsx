@@ -17,8 +17,13 @@ const About = () => {
           <path d="M12 6v6l4 2" />
         </svg>
       ),
-      title: '전문 진단 도구 활용 및 심층 해석',
-      desc: 'VIA 강점, Holland 등 표준화 검사 활용',
+      title: '전문 진단 기반의 다각도 성향 분석',
+      desc: (
+        <>
+          VIA 강점, Holland 등 검증된 도구를 통해<br />
+          나만의 고유한 성향과 숨은 자원을 명확하게 찾아냅니다.
+        </>
+      ),
     },
     {
       icon: (
@@ -27,8 +32,13 @@ const About = () => {
           <circle cx="12" cy="7" r="4" />
         </svg>
       ),
-      title: '1:1 맞춤형 커리어/심리 코칭',
-      desc: '개인별 상황에 최적화된 코칭 설계',
+      title: '액티비티 중심의 참여형 워크숍 설계',
+      desc: (
+        <>
+          자체 개발 교구와 워크시트를 활용하여<br />
+          지루한 일방향 강의가 아닌, 모두가 참여하는 몰입형 교육을 만듭니다.
+        </>
+      ),
     },
     {
       icon: (
@@ -38,8 +48,8 @@ const About = () => {
           <path d="M2 12l10 5 10-5" />
         </svg>
       ),
-      title: '나다움을 찾는 라이프 디자인',
-      desc: '일과 삶의 균형을 위한 통합적 접근',
+      title: '심리·커리어 융합형 통합 솔루션',
+      desc: '회복탄력성 회복부터 주도적 의사결정, 가치관 수립까지 일상과 커리어를 단단하게 연결합니다.',
     },
   ];
 
@@ -253,37 +263,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Philosophy Quote Section */}
-      <section className="py-20 md:py-28 bg-charcoal text-cream relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sage via-coral-light to-sage" />
-        <div className="absolute top-1/4 right-[10%] w-64 h-64 rounded-full bg-sage/5 blur-3xl" />
-        <div className="absolute bottom-1/4 left-[5%] w-48 h-48 rounded-full bg-coral/5 blur-3xl" />
-
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="text-6xl text-sage-light/30 font-serif mb-6">"</div>
-            <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl leading-relaxed mb-8">
-              단단한 뿌리가 있어야
-              <br />
-              건강한 열매를 맺습니다.
-            </blockquote>
-            <div className="flex items-center justify-center gap-4">
-              <span className="w-12 h-px bg-sage-light/30" />
-              <p className="text-cream/60 text-sm tracking-wider">
-                커리어블룸 코칭 철학
-              </p>
-              <span className="w-12 h-px bg-sage-light/30" />
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
@@ -298,6 +277,7 @@ const About = () => {
             </h2>
             <p className="text-warm-gray mb-8 max-w-lg mx-auto">
               첫 상담을 통해 현재 고민을 나누고,
+              <br className="hidden md:block" />{' '}
               당신에게 맞는 코칭 방향을 찾아드립니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -319,7 +299,7 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="btn-secondary"
               >
-                카카오톡 문의하기
+                워크숍 출강 문의하기
               </a>
             </div>
           </motion.div>

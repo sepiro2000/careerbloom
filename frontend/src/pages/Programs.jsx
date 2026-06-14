@@ -20,10 +20,10 @@ const Programs = () => {
             className="text-center"
           >
             <span className="inline-block px-4 py-1.5 bg-sage/10 text-sage-dark text-xs font-medium tracking-wider uppercase rounded-full mb-6">
-              Coaching Programs
+              Bloom Program
             </span>
             <h1 className="heading-display text-3xl md:text-4xl lg:text-5xl text-charcoal mb-6">
-              맞춤형 코칭 프로그램
+              맞춤형 성장 프로그램
             </h1>
             <p className="text-warm-gray text-lg max-w-2xl mx-auto">
               당신의 상황과 목표에 맞는 프로그램을 선택하세요.
@@ -184,6 +184,7 @@ const Programs = () => {
                     </motion.div>
                   ))}
                 </div>
+
               </div>
 
               {/* Image - Right */}
@@ -212,6 +213,24 @@ const Programs = () => {
                     </svg>
                   </a>
                 </div>
+              </div>
+            </div>
+
+            {/* Tracks */}
+            <div className="mt-8 grid sm:grid-cols-2 gap-4">
+              <div className="p-5 bg-coral-light/5 rounded-2xl border border-coral-light/20">
+                <span className="inline-block px-2 py-1 bg-coral/10 text-coral-dark text-xs font-medium rounded">Track A</span>
+                <p className="mt-3 text-sm text-charcoal"><span className="font-medium">[1:1 밀착 코칭]</span> 개인용 4주 마스터 코스</p>
+                <p className="mt-2 text-sm text-warm-gray leading-relaxed">
+                  타인의 기준이 아닌 나만의 '진로 이정표'와 커리어 로드맵을 집중적으로 설계하고 싶은 개인을 위한 맞춤형 마스터 코스입니다.
+                </p>
+              </div>
+              <div className="p-5 bg-coral-light/5 rounded-2xl border border-coral-light/20">
+                <span className="inline-block px-2 py-1 bg-coral/10 text-coral-dark text-xs font-medium rounded">Track B</span>
+                <p className="mt-3 text-sm text-charcoal"><span className="font-medium">[단체 워크숍]</span> 대학 및 청년 기관 맞춤형 모듈</p>
+                <p className="mt-2 text-sm text-warm-gray leading-relaxed">
+                  대학 및 기관의 일정에 맞춰 1회기 특강부터 다회기 워크숍으로 커스텀 운영됩니다. <span className="text-coral-dark font-medium">[워크시트 실습 → 소그룹 나눔 → 성장 맞춤형 가이드]</span>의 3단계 프로세스로 진행됩니다.
+                </p>
               </div>
             </div>
           </motion.article>
@@ -250,10 +269,10 @@ const Programs = () => {
                 </div>
 
                 <h2 className="heading-display text-2xl md:text-3xl text-charcoal mb-2">
-                  라이프 디자인
+                  라이프 긍정학
                 </h2>
                 <p className="text-sm text-warm-gray uppercase tracking-wider mb-4">
-                  Life Design
+                  Life Positive Psychology
                 </p>
 
                 <p className="text-charcoal text-lg mb-8">
@@ -264,10 +283,10 @@ const Programs = () => {
                 <div className="mb-4 p-5 bg-soft-white rounded-xl border border-sage-light/20">
                   <div className="mb-2">
                     <span className="inline-block px-2 py-0.5 bg-sage/10 text-sage-dark text-xs font-medium rounded mr-2">Theme 1</span>
-                    <span className="font-medium text-charcoal text-sm">[흥미] 잃어버린 나의 즐거움을 찾아서</span>
+                    <span className="font-medium text-charcoal text-sm">[회복] 유리멘탈을 위한 마음 근육 키우기 (회복탄력성, 관점 전환)</span>
                   </div>
                   <p className="text-warm-gray text-sm leading-relaxed">
-                    무기력한 일상에 활력이 필요하신가요? 내가 언제 눈이 반짝이는지, 무엇을 할 때 에너지가 차오르는지 탐색하여 일상의 '재미'를 회복합니다.
+                    일상과 관계 속 지친 정서를 회복하고, 어떠한 비바람에도 쉽게 흔들리지 않는 단단한 마음의 뿌리를 세웁니다.
                   </p>
                 </div>
 
@@ -275,23 +294,53 @@ const Programs = () => {
                 <div className="mb-4 p-5 bg-soft-white rounded-xl border border-sage-light/20">
                   <div className="mb-2">
                     <span className="inline-block px-2 py-0.5 bg-sage/10 text-sage-dark text-xs font-medium rounded mr-2">Theme 2</span>
-                    <span className="font-medium text-charcoal text-sm">[강점] 나를 단단하게 만드는 강점 활용법</span>
+                    <span className="font-medium text-charcoal text-sm">[강점] 나를 단단하게 만드는 고유 자원의 발견</span>
                   </div>
                   <p className="text-warm-gray text-sm leading-relaxed">
-                    남들과 비교하느라 지치셨나요? 약점을 보완하느라 애쓰기보다, 내가 가진 고유한 강점에 집중하여 자존감을 높이고 관계를 개선하는 법을 코칭합니다.
+                    타인과의 비교나 약점 보완에 애쓰기보다, 내가 이미 가진 대표 강점을 일상에 적용하여 자존감과 삶의 활력을 높입니다.
                   </p>
                 </div>
 
                 {/* Theme 3 */}
-                <div className="p-5 bg-soft-white rounded-xl border border-sage-light/20">
+                <div className="mb-4 p-5 bg-soft-white rounded-xl border border-sage-light/20">
                   <div className="mb-2">
                     <span className="inline-block px-2 py-0.5 bg-sage/10 text-sage-dark text-xs font-medium rounded mr-2">Theme 3</span>
-                    <span className="font-medium text-charcoal text-sm">[가치관] 내 삶에 만족을 더하는 가치관의 발견</span>
+                    <span className="font-medium text-charcoal text-sm">[결정] 타인의 기준에서 벗어나 내 삶의 중심 세우기 (주도적 의사결정)</span>
                   </div>
                   <p className="text-warm-gray text-sm leading-relaxed">
-                    남들이 좋다는 길을 가고도 공허한가요? 내가 인생에서 진짜 중요하게 여기는 가치가 무엇인지 정의하고, 후회 없는 선택을 하기 위한 나만의 기준을 세웁니다.
+                    남들의 시선이나 불안감에 휘둘리지 않고, 흔들리는 일상 속에서 후회 없는 선택을 내릴 수 있는 나만의 명확한 기준을 정립합니다.
                   </p>
                 </div>
+
+                {/* Theme 4 */}
+                <div className="p-5 bg-soft-white rounded-xl border border-sage-light/20">
+                  <div className="mb-2">
+                    <span className="inline-block px-2 py-0.5 bg-sage/10 text-sage-dark text-xs font-medium rounded mr-2">Theme 4</span>
+                    <span className="font-medium text-charcoal text-sm">[가치관] 내 삶에 만족과 의미를 더하는 나다움의 완성</span>
+                  </div>
+                  <p className="text-warm-gray text-sm leading-relaxed">
+                    남들이 좋다는 공허한 길이 아닌, 인생에서 진짜 중요하게 여기는 핵심 가치를 정의하고 주도적인 라이프스타일을 설계합니다.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Tracks */}
+            <div className="mt-8 grid sm:grid-cols-2 gap-4">
+              <div className="p-5 bg-sage-light/5 rounded-2xl border border-sage-light/20">
+                <span className="inline-block px-2 py-1 bg-sage/10 text-sage-dark text-xs font-medium rounded">Track A</span>
+                <p className="mt-3 text-sm text-charcoal"><span className="font-medium">[1:1 밀착 코칭]</span> 무기력과 번아웃을 극복하고, 나다운 삶의 궤도를 회복하는 4주 마스터 코스</p>
+                <p className="mt-2 text-sm text-warm-gray leading-relaxed">
+                  타인의 기준이 아닌 내 삶의 '진정한 의미'와 단단한 마음 근육을 집중적으로 회복하고 싶은 개인을 위한 맞춤형 마스터 코스입니다.
+                </p>
+              </div>
+              <div className="p-5 bg-sage-light/5 rounded-2xl border border-sage-light/20">
+                <span className="inline-block px-2 py-1 bg-sage/10 text-sage-dark text-xs font-medium rounded">Track B</span>
+                <p className="mt-3 text-sm text-charcoal"><span className="font-medium">[단체 워크숍]</span> 학부모 집단상담 및 기업 임직원 강점 코칭</p>
+                <p className="mt-2 text-sm text-warm-gray leading-relaxed">
+                  학부모 집단상담, 기업 임직원 스트레스 관리 및 긍정 정서 함양 워크숍으로 커스텀 진행됩니다. <span className="text-sage-dark font-medium">[워크시트 실습 → 소그룹 나눔 → 성장 맞춤형 가이드]</span> 포맷으로 운영됩니다.
+                </p>
               </div>
             </div>
           </motion.article>
@@ -352,6 +401,7 @@ const Programs = () => {
                     모의 면접을 통해 답변의 구조를 잡고, 비언어적 태도(시선, 표정, 보이스)까지 교정하여 면접관을 설득하는 이미지를 만듭니다.
                   </p>
                 </div>
+
               </div>
 
               {/* Image - Right */}
@@ -366,55 +416,26 @@ const Programs = () => {
                 </div>
               </div>
             </div>
+
+            {/* Tracks */}
+            <div className="mt-8 grid sm:grid-cols-2 gap-4">
+              <div className="p-5 bg-terracotta/5 rounded-2xl border border-terracotta/20">
+                <span className="inline-block px-2 py-1 bg-terracotta/10 text-terracotta text-xs font-medium rounded">Track A</span>
+                <p className="mt-3 text-sm text-charcoal"><span className="font-medium">[1:1 컨설팅]</span> 서류 첨삭 및 모의 면접 클리닉</p>
+                <p className="mt-2 text-sm text-warm-gray leading-relaxed">
+                  타인의 기준이 아닌 나만의 차별화된 '강점 스토리'로 취업 돌파구를 집중적으로 찾고 싶은 개인을 위한 맞춤형 밀착 코스입니다.
+                </p>
+              </div>
+              <div className="p-5 bg-terracotta/5 rounded-2xl border border-terracotta/20">
+                <span className="inline-block px-2 py-1 bg-terracotta/10 text-terracotta text-xs font-medium rounded">Track B</span>
+                <p className="mt-3 text-sm text-charcoal"><span className="font-medium">[단체 특강]</span> 대학 및 기관 대상 실전 취업 특강</p>
+                <p className="mt-2 text-sm text-warm-gray leading-relaxed">
+                  대학 취업 비교과, 특성화고 반별 연수, 지자체 청년 취업 특강 등 기관 목적에 맞춘 실전형 모듈로 운영됩니다.
+                </p>
+              </div>
+            </div>
           </motion.article>
 
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="py-20 md:py-28 gradient-section">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <span className="inline-block px-4 py-1.5 bg-sage/10 text-sage-dark text-xs font-medium tracking-wider uppercase rounded-full mb-6">
-              How It Works
-            </span>
-            <h2 className="heading-display text-3xl md:text-4xl text-charcoal">
-              코칭 진행 과정
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-6 relative">
-            {/* Connecting line */}
-            <div className="hidden md:block absolute top-12 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-sage-light via-coral-light to-terracotta" />
-
-            {[
-              { step: '01', title: '상담 신청', desc: '신청서 작성 및 일정 조율' },
-              { step: '02', title: '사전 진단', desc: '유형별 맞춤 진단 도구 제공' },
-              { step: '03', title: '코칭 진행', desc: '맞춤형 1:1 코칭 세션' },
-              { step: '04', title: '성장 확인', desc: '변화 점검 및 피드백' },
-            ].map((item, index) => (
-              <motion.div
-                key={item.step}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="relative text-center"
-              >
-                <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-soft-white shadow-lg flex items-center justify-center relative z-10">
-                  <span className="font-serif text-2xl text-sage-dark">{item.step}</span>
-                </div>
-                <h3 className="font-medium text-lg text-charcoal mb-2">{item.title}</h3>
-                <p className="text-sm text-warm-gray">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -436,8 +457,11 @@ const Programs = () => {
               나에게 맞을까요?
             </h2>
             <p className="text-cream/70 mb-8 max-w-lg mx-auto">
-              첫 상담을 통해 현재 상황과 목표를 파악하고,
-              당신에게 가장 적합한 프로그램을 안내해 드립니다.
+              나만의 궤도를 회복하는 [1:1 밀착 코칭]과
+              <br className="hidden md:block" />{' '}
+              조직의 에너지를 깨우는 [기관 맞춤형 워크숍] 중
+              <br className="hidden md:block" />{' '}
+              지금 필요한 여정을 제안받아 보세요.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -459,7 +483,7 @@ const Programs = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent hover:bg-cream/10 text-cream font-medium rounded-full border-2 border-cream/30 hover:border-cream/50 transition-all duration-300"
               >
-                카카오톡으로 문의하기
+                워크숍 출강 문의하기
               </a>
             </div>
           </motion.div>
