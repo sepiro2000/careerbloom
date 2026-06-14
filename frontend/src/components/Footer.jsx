@@ -136,12 +136,9 @@ const Footer = () => {
               {/* Email */}
               <div className="mb-4">
                 <p className="text-xs text-cream/50 uppercase tracking-wider mb-1">Email</p>
-                <a
-                  href="mailto:kar4823@nate.com"
-                  className="text-cream/70 hover:text-cream transition-colors text-sm"
-                >
+                <span className="text-cream/70 text-sm select-text">
                   kar4823@nate.com
-                </a>
+                </span>
               </div>
 
               {/* Application Button */}

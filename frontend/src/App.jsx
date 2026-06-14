@@ -4,6 +4,8 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Programs from './pages/Programs';
+import Review from './pages/Review';
+import { Agentation } from 'agentation';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -25,8 +27,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/review" element={<Review />} />
         </Routes>
       </Layout>
+      {import.meta.env.DEV && <Agentation />}
     </Router>
   );
 }
