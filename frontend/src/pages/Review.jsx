@@ -436,7 +436,10 @@ const LinkButton = ({ href, children }) => (
 );
 
 const Review = () => {
-  const [openId, setOpenId] = useState(reviews[0]?.id ?? null);
+  // 기본 전부 닫힘. 여러 개를 동시에 열 수 있고, 새로 열어도 기존 항목은 닫히지 않는다.
+  const [openIds, setOpenIds] = useState([]);
+  const toggle = (id) =>
+    setOpenIds((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
 
   return (
     <div className="pt-24">
@@ -473,7 +476,7 @@ const Review = () => {
       <section className="py-16 md:py-24 bg-cream">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 space-y-6">
           {reviews.map((review, index) => {
-            const isOpen = openId === review.id;
+            const isOpen = openIds.includes(review.id);
             return (
               <motion.article
                 key={review.id}
@@ -486,7 +489,7 @@ const Review = () => {
                 {/* Header (toggle) */}
                 <button
                   type="button"
-                  onClick={() => setOpenId(isOpen ? null : review.id)}
+                  onClick={() => toggle(review.id)}
                   className="w-full text-left p-6 md:p-8 flex items-start gap-4"
                   aria-expanded={isOpen}
                 >
