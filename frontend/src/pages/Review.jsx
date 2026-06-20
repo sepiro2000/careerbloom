@@ -185,6 +185,47 @@ const reviews = [
       },
     ],
   },
+  {
+    id: 'foodnutrition-signature',
+    category: '대학 맞춤형 · 진로 특강',
+    title: "[대학 맞춤형/진로 특강] 식품영양학과 학생들의 커리어 레시피: 나만의 '시그니처 메뉴' 찾기",
+    intro:
+      "최근 취업 시장의 가장 큰 화두는 '경력직 선호'와 이로 인한 '일자리 미스매치'입니다. \"신입인데 어떻게 경력을 보여주지?\"라며 막연한 불안감을 갖고 있는 식품영양학과 학생들을 위해, 세상에 하나뿐인 나만의 커리어 로드맵을 설계하는 <나의 커리어 레시피> 특강을 진행했습니다.",
+    // 현장 스케치 그리드용 4장(2×2). public/reviews/foodnutrition-signature/ 에 01~04 이미지를 넣으면 자동 표시된다.
+    galleryCols: 2,
+    gallery: [
+      { src: '/reviews/foodnutrition-signature/01.png', label: '01.png' },
+      { src: '/reviews/foodnutrition-signature/02.png', label: '02.png' },
+      { src: '/reviews/foodnutrition-signature/03.png', label: '03.png' },
+      { src: '/reviews/foodnutrition-signature/04.jpeg', label: '04.jpeg' },
+    ],
+    qnaTitle: '💡 Q&A · 실전에서 찾아낸 정답',
+    qnaIntro:
+      "강의를 마무리하며 학생들에게 \"오늘 가장 기억에 남는 것이 무엇이었나요?\"라고 물었습니다. 여러 대답 속에서 유독 귀에 선명하게 들렸던 단어는 바로 '임금직업포털'이었습니다. 이어진 질의응답 시간에도 뜬구름 잡는 이야기가 아닌, 당장 내 커리어를 시그니처 메뉴로 만들기 위한 구체적인 질문들이 쏟아졌습니다.",
+    qna: [
+      {
+        q: '고용24에서 식품영양학과 정보를 어떻게 검색하고 활용해야 하나요?',
+        a: "고용24의 '취업가이드 ➡️ 학과정보' 메뉴를 통해 단순히 영양사라는 하나의 문만 보는 것이 아니라, 단체급식·외식, 공공, 연구 등 내 전공으로 열 수 있는 5개의 문을 확인하고 필수·우대사항을 스크랩하는 법을 가이드했습니다.",
+      },
+      {
+        q: '식품영양 전공 외에 더 많은 직업 정보는 어디서 찾아야 할까요?',
+        a: "임금직업포털을 활용해 수행직무 내용을 살펴보고 업무 특성(흥미/성격/가치관 등)을 보며 직업과 나를 매칭하는 방법을 공유했습니다. 특히 분석을 좋아하는 '지식 탐험가(I유형)' 성향의 학생들에게는 식품 R&D 품질관리 연구원 등 나만의 보석 같은 히든 직무를 스스로 포착할 수 있는 경로를 매핑해 주었습니다.",
+      },
+    ],
+    // 가로 카드뉴스 슬라이더용 6장. public/reviews/foodnutrition-signature/1st_card_news/ 에 이미지를 넣으면 자동 표시된다.
+    cardNews: [
+      '/reviews/foodnutrition-signature/1st_card_news/01.jpeg',
+      '/reviews/foodnutrition-signature/1st_card_news/02.jpeg',
+      '/reviews/foodnutrition-signature/1st_card_news/03.jpeg',
+      '/reviews/foodnutrition-signature/1st_card_news/04.jpeg',
+      '/reviews/foodnutrition-signature/1st_card_news/05.jpeg',
+      '/reviews/foodnutrition-signature/1st_card_news/06.jpeg',
+    ],
+    links: {
+      blogUrl: 'https://blog.naver.com/careerbloom/224045562581',
+      instaUrl: 'https://www.instagram.com/p/DQA9Ic_ASHG/?img_index=1',
+    },
+  },
 ];
 
 // 만족도 별점
@@ -560,25 +601,77 @@ const Review = () => {
                           </blockquote>
                         )}
 
-                        {/* 2×3 Image Grid */}
-                        <div className="mt-8">
-                          <h3 className="text-sm font-medium uppercase tracking-wider text-sage-dark mb-4 flex items-center gap-2">
-                            <span className="w-8 h-px bg-sage-light" />
-                            현장 스케치 및 실습 기록
-                          </h3>
-                          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-                            {review.gallery.map((img, i) => (
-                              <SmartImage
-                                key={i}
-                                src={img.src}
-                                label={img.label}
-                                className="w-full aspect-[4/3] rounded-xl"
-                              />
-                            ))}
+                        {/* 현장 스케치 — 2×3 그리드 */}
+                        {review.gallery?.length > 0 && (
+                          <div className="mt-8">
+                            <h3 className="text-sm font-medium uppercase tracking-wider text-sage-dark mb-4 flex items-center gap-2">
+                              <span className="w-8 h-px bg-sage-light" />
+                              현장 스케치 및 실습 기록
+                            </h3>
+                            <div
+                              className={`grid grid-cols-2 gap-3 md:gap-4 ${
+                                review.galleryCols === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'
+                              }`}
+                            >
+                              {review.gallery.map((img, i) => (
+                                <SmartImage
+                                  key={i}
+                                  src={img.src}
+                                  label={img.label}
+                                  className="w-full aspect-[4/3] rounded-xl"
+                                />
+                              ))}
+                            </div>
                           </div>
-                        </div>
+                        )}
+
+                        {/* Q&A (Coach's Recipe) */}
+                        {review.qna && review.qna.length > 0 && (
+                          <div className="mt-10">
+                            <h3 className="text-sm font-medium uppercase tracking-wider text-sage-dark mb-4 flex items-center gap-2">
+                              <span className="w-8 h-px bg-sage-light" />
+                              {review.qnaTitle || 'Q&A'}
+                            </h3>
+                            {review.qnaIntro && (
+                              <p className="text-warm-gray leading-relaxed mb-5">{review.qnaIntro}</p>
+                            )}
+                            <div className="space-y-4">
+                              {review.qna.map((item, i) => (
+                                <div
+                                  key={i}
+                                  className="p-5 md:p-6 bg-cream rounded-2xl border border-sage-light/20"
+                                >
+                                  <div className="flex items-start gap-3 mb-4">
+                                    <span className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-sage/15 text-sage-dark text-sm font-semibold">
+                                      Q
+                                    </span>
+                                    <p className="font-medium text-charcoal leading-snug">{item.q}</p>
+                                  </div>
+                                  <div className="rounded-xl bg-gradient-to-br from-sage-light/10 via-soft-white to-coral-light/10 border border-sage-light/20 p-4 md:p-5">
+                                    <p className="text-xs font-medium text-coral-dark tracking-wider mb-2">
+                                      🎨 Coach's Recipe
+                                    </p>
+                                    <p className="text-sm text-warm-gray leading-relaxed">{item.a}</p>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* 카드뉴스 — 가로 넘겨보기 슬라이더 */}
+                        {review.cardNews?.length > 0 && (
+                          <div className="mt-10">
+                            <h3 className="text-sm font-medium uppercase tracking-wider text-sage-dark mb-4 flex items-center gap-2">
+                              <span className="w-8 h-px bg-sage-light" />
+                              카드뉴스
+                            </h3>
+                            <CardNewsSlider cards={review.cardNews} />
+                          </div>
+                        )}
 
                         {/* Sessions */}
+                        {review.sessions && review.sessions.length > 0 && (
                         <div className="mt-10">
                           <h3 className="text-sm font-medium uppercase tracking-wider text-sage-dark mb-5 flex items-center gap-2">
                             <span className="w-8 h-px bg-sage-light" />
@@ -614,6 +707,19 @@ const Review = () => {
                             ))}
                           </div>
                         </div>
+                        )}
+
+                        {/* 후기 전체 바로가기 링크 (세션이 없는 단일 후기용) */}
+                        {review.links && (
+                          <div className="mt-8 flex flex-wrap gap-3">
+                            {review.links.blogUrl && (
+                              <LinkButton href={review.links.blogUrl}>블로그 후기 읽기</LinkButton>
+                            )}
+                            {review.links.instaUrl && (
+                              <LinkButton href={review.links.instaUrl}>인스타그램 보기</LinkButton>
+                            )}
+                          </div>
+                        )}
                       </div>
                     </motion.div>
                   )}
