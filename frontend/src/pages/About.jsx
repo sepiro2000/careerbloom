@@ -273,12 +273,12 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="heading-display text-2xl md:text-3xl text-charcoal mb-6">
-              함께 성장의 여정을 시작하세요
+              함께 성장의 가능성을 넓혀가세요
             </h2>
             <p className="text-warm-gray mb-8 max-w-lg mx-auto">
-              첫 상담을 통해 현재 고민을 나누고,
+              홀로 고민하는 개인을 위한 밀착 코칭부터,
               <br className="hidden md:block" />{' '}
-              당신에게 맞는 코칭 방향을 찾아드립니다.
+              단단한 마음 근육을 기르는 대학·기관 맞춤형 워크숍까지 커리어블룸이 연결합니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
